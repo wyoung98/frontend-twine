@@ -1,0 +1,12 @@
+body{
+    width: 50%;
+    text-align: center;
+    background-color: gray;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
