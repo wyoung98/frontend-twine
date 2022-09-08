@@ -1,7 +1,31 @@
 <body>
-    <div class="flex">
-        <ng-template *ngFor="let goal in goals">
+    <div class="flex" *ngFor="let goal of goals">
+        <p-card>
+        <a routerLink="/edit-goal" routerLinkActive="active">
+            <ng-template pTemplate="header">
+                {{goal.name}}
+            </ng-template>
+                <img src='{{goal.image}}' alt="Image here">
+                <br>
+                Description: 
+                <br>
+                {{goal.description}}
+                <br>
+                Currently Saved:
+                <br>
+                ${{goal.currentsavings}}
+                <br>
+                Goal:
+                <br>
+                ${{goal.finalsavings}}
+                <br>
+                Goal Date:
+                <br>
+                {{goal.endDate.toDateString()}}
+                <ng-template pTemplate="footer">
 
-        </ng-template>
+                </ng-template> 
+        </a>
+    </p-card>
     </div>
 </body>

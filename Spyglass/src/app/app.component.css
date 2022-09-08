@@ -1,20 +1,34 @@
-html{
+/* body{
     background-image:url('../assets/imgs/Background.jpg');
     background-color: aqua;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin: 0px;
     height: 100%;
-}
+} */
 
-body{
-    margin: 0px;
-}
 header{
+    height: 10em;
+    width: 100%;
+    margin: 0%;
+    background-color:aqua;
+    border-radius: 0;
+    padding: 1em 2.4em 0.6em 1em;
+}
+footer{
     height: 5em;
     width: 100%;
     margin: 0%;
-    background-color:aquamarine;
+    background-color:aqua;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    margin: 2px;
+    text-decoration: none;
+    color:inherit;
 }

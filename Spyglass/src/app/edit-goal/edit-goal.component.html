@@ -1,0 +1,45 @@
+<div class="flex">
+    <div class="left">
+        <p-tabView>
+            <p-tabPanel header="Goal">
+            <form>
+                <label>Goal Name:</label>
+                <br>
+                <input type="text"  pInputText [(ngModel)]="goal.name" [ngModelOptions]="{standalone: true}" />
+                <br>
+                <label>Current Savings:</label>
+                <br>
+                <p-inputNumber mode="currency" currency="USD" [minFractionDigits]="2" [(ngModel)]="goal.currentsavings" [ngModelOptions]="{standalone: true}"></p-inputNumber>
+                <br>
+                <label>Goal Amount:</label>
+                <br>
+                <p-inputNumber mode="currency" currency="USD" [minFractionDigits]="2" [(ngModel)]="goal.finalsavings" [ngModelOptions]="{standalone: true}"></p-inputNumber>
+                <br>
+                <label>End Date:</label>
+                <br>
+                <p-calendar [(ngModel)] = "goal.endDate" [ngModelOptions]="{standalone: true}"></p-calendar>
+            </form>
+            </p-tabPanel>
+            <p-tabPanel header="Image">
+                <form>
+
+                </form>
+            </p-tabPanel>
+            <p-tabPanel header="Description">
+                <form>
+                    <label>Description:</label>
+                    <br>
+                    <textarea [(ngModel)]="goal.description" pInputTextarea cols="30" rows="10" [ngModelOptions]="{standalone: true}"></textarea>
+                </form>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+
+    <div>
+        <img src="./assets/imgs/image1.jpg" alt="Image here" height="400">
+    </div>
+</div>
+<div class="buttons">
+    <button pButton>Update</button>
+    <button pButton>Delete</button>
+</div>

@@ -1,0 +1,26 @@
+div{
+    margin: auto;
+    margin-top: 2.5%;
+    width: 50%;
+    border-color: brown;
+    border-radius: 1em;
+}
+
+form{
+    margin: 1em;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    margin-right: 20%;
+}
+
+.buttons{
+    margin-top: 0;
+}
+button{
+    margin: 0 1em 1em 0;
+}
